@@ -27,7 +27,13 @@ h1{
 .top{
     display:flex;
     justify-content:space-between;
+    font-size:2rem;
 }
+
+.top i{
+    cursor:pointer;
+}
+
 
 .middle img{
     width:130px;
@@ -52,6 +58,7 @@ h1{
 .script span:nth-child(1),.script span:nth-child(3){
     font-size:2rem;
     margin:1rem;
+    cursor:pointer;
 }
 
 button{
@@ -64,9 +71,15 @@ button{
     text-transform:lowercase;
     width:90%;
     box-shadow: 1px 13px 25px silver;
+    transition:.3s
 }
 
-#date{
-    font-weight:bolder;
-    margin-top:1rem;
+button:hover{
+    background:#2f3035;
+    cursor:pointer;
+}
+
+form input{
+    border:none;
+    color:#5C5F69;
 }

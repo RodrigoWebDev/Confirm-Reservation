@@ -1,35 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Confirm Reservation</title>
-        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
-        <link rel="stylesheet" type="text/css" href="css/normalize.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        
-        
-    </head>
-    <body>
-        <div class="card">
-            <div class="top">
-                <img src="imagens/left-arrow.png" alt="left arrow">
-                <img src="imagens/magnifying-glass-browser.png" alt="search">
-            </div>
-            <div class="middle">
-                <img src="imagens/casuarina_large.jpg" alt="place">
-                <h1>The Water Club</h1>
-                <p>Table For</p>
-                <div class="script">
-                    <span>-</span>
-                    <span id="number">0</span>
-                    <span>+</span>
-                </div>
-                
-                <p>Choose Date & Time</p>
-                <p id="date">05 May 2017 - 19:30</p>
-                
-                <button>Confirm</button>
-            </div>
+
+<head>
+    <meta charset="utf-8">
+    <title>Confirm Reservation</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+
+</head>
+
+<body>
+    <div class="card">
+        <div class="top">
+            <i class="icon-arrow-left"></i>
+            <i class="icon-magnifier"></i>
         </div>
-    </body>
+        <div class="middle">
+            <img src="imagens/casuarina_large.jpg" alt="place">
+            <h1>The Water Club</h1>
+            <p>Table For</p>
+            <div class="script">
+                <span id="minus">-</span>
+                <span id="number"></span>
+                <span id="plus">+</span>
+            </div>
+
+            <p>Choose Date & Time</p>
+            <form method="get" action="">
+                <input type="date" value="2017-06-01" name="data">
+                <input type="time" value="20:30" name="horario">
+            </form>
+
+            <button>Confirm</button>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
 </html>
