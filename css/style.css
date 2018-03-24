@@ -18,7 +18,7 @@ h1{
 }
 .card{
     background-color:#FFFFFF;
-    width:400px;
+    max-width:400px;
     margin: 15px auto;
     padding:3rem;
     box-shadow: 1px 1px 50px silver;
